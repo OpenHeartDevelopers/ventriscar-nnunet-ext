@@ -1,0 +1,21 @@
+# pyproject.toml
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "ventriscar-nnunet-ext"
+version = "0.1.0"
+description = "Custom nnU-Net extensions for the VentriScar project, including UxLSTM architectures and trainers."
+requires-python = ">=3.9"
+classifiers = [
+    "Programming Language :: Python :: 3",
+]
+# Add dependencies that the custom code itself needs.
+# nnunetv2 is a key dependency.
+dependencies = [
+    "nnunetv2"
+]
+
+[tool.setuptools.packages.find]
+where = ["src"]
