@@ -1,8 +1,8 @@
 from nnunetv2.training.nnUNetTrainer.nnUNetTrainer import nnUNetTrainer
 from nnunetv2.utilities.plans_handling.plans_handler import ConfigurationManager, PlansManager
 from torch import nn
-from nnunetv2_ext.nets.UxLSTMBot_3d import get_uxlstm_bot_3d_from_plans
-from nnunetv2_ext.nets.UxLSTMBot_2d import get_uxlstm_bot_2d_from_plans
+from nnunetv2.nets.UxLSTMBot_3d import get_uxlstm_bot_3d_from_plans
+from nnunetv2.nets.UxLSTMBot_2d import get_uxlstm_bot_2d_from_plans
 
 
 class nnUNetTrainerUxLSTMBot(nnUNetTrainer):

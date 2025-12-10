@@ -15,7 +15,7 @@ from nnunetv2.utilities.network_initialization import InitWeights_He
 from dynamic_network_architectures.building_blocks.helper import maybe_convert_scalar_to_list, get_matching_pool_op
 from torch.cuda.amp import autocast
 from dynamic_network_architectures.building_blocks.residual import BasicBlockD
-from nnunetv2_ext.nets.vision_lstm import ViLBlock, SequenceTraversal
+from nnunetv2.nets.vision_lstm import ViLBlock, SequenceTraversal
 
 class UpsampleLayer(nn.Module):
     def __init__(

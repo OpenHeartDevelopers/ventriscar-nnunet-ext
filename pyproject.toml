@@ -11,11 +11,12 @@ requires-python = ">=3.9"
 classifiers = [
     "Programming Language :: Python :: 3",
 ]
-# Add dependencies that the custom code itself needs.
-# nnunetv2 is a key dependency.
 dependencies = [
     "nnunetv2"
 ]
 
+[project.scripts]
+ventriscar-ext = "nnunetv2.manage:main"
+
 [tool.setuptools.packages.find]
-where = ["src"]
+where = ["src"]  # Find packages in src directory
