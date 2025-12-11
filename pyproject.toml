@@ -7,16 +7,22 @@ build-backend = "setuptools.build_meta"
 name = "ventriscar-nnunet-ext"
 version = "0.1.0"
 description = "Custom nnU-Net extensions for the VentriScar project, including UxLSTM architectures and trainers."
-requires-python = ">=3.9"
+requires-python = ">=3.10"
 classifiers = [
     "Programming Language :: Python :: 3",
 ]
 dependencies = [
-    "nnunetv2"
+    "torch == 2.5.1",
+    "nnunetv2==2.3.1",
+    "SimpleITK==2.2.1",
+    "batchgenerators==0.25",
+    "acvl-utils==0.2.5",
+    "tqdm==4.65.0",
+    "numpy<2.0",
+    "dynamic-network-architectures",
+    "monai==1.1.0",
+    "einops"
 ]
 
-[project.scripts]
-ventriscar-ext = "nnunetv2.manage:main"
-
 [tool.setuptools.packages.find]
-where = ["src"]  # Find packages in src directory
+where = ["src"]
